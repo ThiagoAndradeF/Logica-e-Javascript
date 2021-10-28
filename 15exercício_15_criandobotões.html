@@ -7,18 +7,27 @@
     <title>Botões criar e limpar tabuada</title>
 </head>
 <body>
+    
     <button onclick="mostrarTabuada()"> Criar tabuada</button>
     <button onclick="limparTabuada()"> Limpar tabuada</button>
+    <div id="output"></div>
     <script>
-        function mostrarTabuada(){
-            var n= parseFloat(prompt:("escolha um numero"))
-            var i= 1;
-            while(indice<=1000);
-            i++
-            mensagem+= n +"x"+i+"="+(i*n)+"<br>";
+       var output=document.querySelector("#output")
+       var mensagem=""
+       function mostrarTabuada(){
+           var n= parseFloat(prompt("digite um número"));
+           limparTabuada()
+           var i=1;
+           while(i<=1000){
+           mensagem+= n+"x"+i+"="+(n*i)+"<br>";
+           i++;
         }
-        output.innerHTML= mensagem;
-        var output= document.querySelector()
+           output.innerHTML=mensagem;
+       }
+       function limparTabuada(){
+           mensagem="";
+           output.innerHTML=mensagem;
+       }
     </script>
 </body>
 
