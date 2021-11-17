@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcalculadora</title>
+</head>
+<body>
+<button onclick=" calcular('-')"> - </button>
+<button onclick=" calcular('+')"> + </button>
+<button onclick=" calcular('*')"> x </button>
+<button onclick=" calcular('/')"> / </button>
+<div id="output"></div>
+<script>
+    var n1= parseFloat(prompt("digite um número"));
+    function mostrar(){
+        var output= document.querySelector("#output");
+        output.innerHTML=n1
+        
+    }
+    function calcular(O){
+        n=parseFloat(prompt("digite outro número"))
+        switch(O){
+            case '+':
+            n1+=n
+            break;
+            case '-':
+            n1-=n
+            break;
+            case '/':
+            n1/=n
+            break;
+            case '*':
+            n1*=n
+        }
+        mostrar()
+    }
+
+
+</script>
+</body> 
+</html>
