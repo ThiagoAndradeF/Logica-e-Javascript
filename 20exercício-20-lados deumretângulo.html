@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões criar e limpar tabuada</title>
+</head>
+<body>
+    
+    <button onclick="iniciarCalculo()"> Calcular área do retângulo</button>
+    <div id="output"></div>
+    <script>
+        function escrever(mensagem){
+            var output=document.querySelector("#output");
+            output.innerHTML= mensagem
+        }
+        var c1= parseFloat(prompt("digite o valor de um dos lados do retângulo"));
+
+        var c2= parseFloat(prompt("digite o valor do lado adjacente"));
+
+        function calcular(n1,n2){
+            if (isNaN(n1) || isNaN(n2)){
+                throw new Error('se fodeu meu exímio')
+            }
+            if (n1=== undefined || n2=== undefined){
+                throw new Error('se fodeu meu exímio')}
+
+            var numeroCalculado=null;
+            numeroCalculado= parseFloat(n1*n2);
+            return numeroCalculado;
+
+        }
+        try{
+            var msg= calcular(c1,c2)}
+            catch(e){
+                alert(e);
+            }
+        escrever(msg)
+
+        function iniciarCalculo(d1,d2){
+            var d1= parseFloat(prompt("digite o valor de um dos lados do retângulo"));
+         
+            var d2= parseFloat(prompt("digite o valor do lado adjacente"));
+            try{
+            var msg2= calcular(d1,d2)}
+            catch(e){
+                alert(e);
+            }
+            escrever(msg2)        
+        } 
+    </script>
+</body>
+
+</html>
