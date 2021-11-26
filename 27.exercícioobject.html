@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+       var user1= new Object();
+       user1.nome='maria ';
+       user1.email= 'maria@server.com';
+       var user2= new Object();
+       user2.nome='maria alice';
+       user2.email= 'mariaalice@server.com';
+       var user3= new Object();
+       user3.nome='maria joana';
+       user3.email= 'mariajoana@server.com';
+       var users= new Array(user1, user2, user3);
+       var msg="";
+       for(i=0;i<users.length; i++){
+           msg+="nome:"+ users[i].nome+"<br>"
+           msg+="email:"+ users[i].email+"<br>"+"<hr>"
+       };
+    document.querySelector("#output").innerHTML=msg;
+    </script>
+</body>
+</html>
