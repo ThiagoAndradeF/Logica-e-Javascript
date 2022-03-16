@@ -8,15 +8,16 @@
 </head>
 <body>
     <script>
-        var n1= prompt('digite o primeiro número');
-        n1=parseFloat(n1);
-        var n2=parseFloat(prompt('digite o segundo número'));
-        var media=(n1+n2)/2;
-        if(media>5 && n1>0 && n2>0){
-            alert("parabens! você passou");}
-        else{
-            alert("não foi dessa vez!");
+        var n1= parseFloat(prompt('digite a sua primeira nota'));
+        var n2= parseFloat(prompt('digite a sua segunda nota'));
+        var media= (n1+n1)/2;
+        if(media<5 || n1==0 || n2==0){
+            alert("você foi reprovado!")
         }
+        else{ 
+            alert("você passou!")
+        };
+
     </script>
 </body>
 </html>

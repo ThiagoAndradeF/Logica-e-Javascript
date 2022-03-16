@@ -8,15 +8,14 @@
 </head>
 <body>
     <script>
-        var n= parseFloat(prompt("digite um número"))
-        var indice= 1
-        while(indice<=1000){
-            document.write( n + "x" + indice + "=" + (indice*n)+ "<br>");
-            if(indice%10===0  ){document.write("<hr>");}
-            indice= indice +1;
-            
+        var n= parseFloat(prompt("escolha um número!"));
+        var i= 1;
+        while(i<=1000){
+            document.write(n + "x" + i + "=" + (n*i) + "<br>" );
+            if(i%10===0){document.write('<hr>');}
+            i++;
         }
-        document.write("fim do loop")
+        document.write("fim do loop");
     </script>
 </body>
 </html>
