@@ -7,41 +7,37 @@
     <title>Microcalculadora</title>
 </head>
 <body>
-<button onclick=" subtrair()"> - </button>
-<button onclick=" somar()"> + </button>
-<button onclick=" multiplicar()"> x </button>
-<button onclick=" dividir()"> / </button>
 <div id="output"></div>
+<button onclick="somar()">+</button>
+<button onclick="subtrair()">-</button>
+<button onclick="dividir()">/</button>
+<button onclick="multiplicar()">x</button>
 <script>
-    var n1= parseFloat(prompt("digite um número"));
     function mostrar(){
-        var output= document.querySelector("#output");
-        output.innerHTML=n1
-        
-    }
-    function subtrair(){
-        n=parseFloat(prompt("digite outro número"))
-        n1-=n
-        mostrar()
-    }
+        var output=document.querySelector("#output");
+        output.innerHTML=n1;
+        }
+    var n1=parseFloat(prompt("digite um número"));
     function somar(){
-        n=parseFloat(prompt("digite outro número"))
+        n= parseFloat(prompt("digite um outro número"))
         n1+=n
         mostrar()
     }
+    function subtrair(){
+        n= parseFloat(prompt("digite um outro número"))
+        n1-=n
+        mostrar()
+    }
     function dividir(){
-        n=parseFloat(prompt("digite outro número"))
+        n= parseFloat(prompt("digite um outro número"))
         n1/=n
         mostrar()
     }
     function multiplicar(){
-        n=parseFloat(prompt("digite outro número"))
+        n= parseFloat(prompt("digite um outro número"))
         n1*=n
         mostrar()
     }
-
-
-
 </script>
 </body> 
 </html>
